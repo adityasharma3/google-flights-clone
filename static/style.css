@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    font-family: 'Open Sans', 'Roboto',sans-serif;
+    font-family: 'Poppins','Open Sans', 'Roboto',sans-serif;
     padding: 1px;
     margin: 1px;
 }
@@ -24,7 +25,7 @@ nav .left-section > img {
 }
 
 nav > .right-section {
-    left: 93%;
+    left: 95%;
     position: absolute;
     display: flex;
     text-align:center;
@@ -35,7 +36,7 @@ nav > .right-section >#google-logo >img {
 }
 
 article {
-    margin : 0px 15% 1% 15%;
+    margin : 0px 25% 1% 25%;
 }
 
 article > h1 {
@@ -45,9 +46,12 @@ article > h1 {
 }
 
 .main-card {
-    border: 1px solid brown;
+    border: 1px solid rgb(112, 103, 103);
     margin-top: 2%;
     padding: 1%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #C3C5C5;
+
 }
 
 .main-card > .option-selection {
@@ -63,6 +67,7 @@ article > h1 {
     border: 0px;
     outline: none;
     font-weight: 800;
+    color: grey;
 }
 
 .main-forms {
@@ -72,28 +77,127 @@ article > h1 {
 }
 
 .main-forms > .left-form > .airport-selection > input ,
-.main-forms > .right-form > .airport-selection > input {
+.main-forms > .right-form > .airport-selection > input ,
+.main-forms > .dates > input {
     width: 100%;
     height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
 } 
 
 .main-forms > .left-form ,
 .main-forms > .right-form {
-    width: 45%;
+    width: 40%;
 }
 
 .main-forms > .right-form {
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
-center > a {
+.dates {
+    padding-left: 20px;
+}
+
+.search-btn > a {
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #6200ee;
-    padding: 1%;
+    background-color: #1B66CA;
+    padding: 10px;
     color: white;
     font-weight: 800;
     box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+    left: 48%;
+    position: absolute;
+}
 
+.search-btn > a:hover {
+    opacity: 0.9;
+    transition: 0.2s ease;
+}
+
+.search-btn > a > img {
+    width: 15px;
+}
+
+.covid-card {
+    display: flex;
+    margin-top: 5%;
+    border: 2px solid black;
+    border: 1px solid rgb(112, 103, 103);
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #C3C5C5;
+}
+
+.covid-card > .img-column {
+    margin-left: 3%;
+    width: 15%;
+    display: block;
+}
+
+.covid-card > .img-column > img {
+    width: 60%;
+}
+
+.covid-card > .text-column {
+    margin-top: 15px;
+}
+
+.covid-card > .text-column > span {
+    font-weight : 300;
+    font-size: large;
+}
+
+.trips-container {
+    display: flex;
+}
+
+.trips-container > .left {
+    width: 50%;
+}
+
+.trips-container > .right {
+    width: 50%;
+}
+
+.trips-container > .right > a{
+    float: right;
+    text-decoration: none;
+    color: #1B66CA;
+    font-weight: 500;
+}
+
+.flight-and-map-container {
+    display: flex;
+    /* border: 1px solid; */
+}
+
+.flights-container {
+    display: flex;
+    width: 50%;
+}
+
+.flight-and-map-container > .flights-container > .flight  {
+    display: flex;
+    border: 2px solid blue;
+    width: 100%;
+}
+
+.flight-and-map-container > .flights-container > .flight > .flight-img > img  {
+    width: 95%;
+    border-radius: 10px;
+}
+
+.flight-and-map-container > .flights-container > .flight > .flight-text {
+    width: 50%;
+}
+
+.flight-and-map-container > .flights-container > .flight > .flight-text > span {
+    font-weight: 600;
+}
+
+.flight-and-map-container > .flights-container > .flight > .flight-text > p {
+    font-size: small;
 }

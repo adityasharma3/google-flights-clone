@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png">
     <title>Google Flights</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
-    <h1>Flights</h1>
+    <nav>
+        <div class="left-section">
+            <img src="./img/menu.svg" class = "top_right_menu_bar" alt="menu-bar">
+            <img src="./img/googlelogo_color_272x92dp.png" alt="Google logo" style="width: 50%; padding-left: 10px;">
+        </div>
+
+        <div class="right-section">
+            <a href="https://news.google.com/topstories?tab=rn&hl=en-IN&gl=IN&ceid=IN:en"><img src="./img/google_dice.PNG" alt="google dice" style="width: 35px;"></a>
+            <a href="https://www.google.com/" id="google-logo"><img src="./img/Google__G__Logo.svg.webp"></a>
+        </div>
+    </nav>
+
+    <article>
+        <img src="./img/background.svg" alt="google flights backdrop">
+        <h1>Flights</h1>
+        <div class="main-card">
+            <div class="option-selection">
+                <select name="trip">
+                    <option>Round trip</option>
+                    <option>One way</option>
+                    <option>Multi-city</option>
+                </select>
+            </div>
+
+            <div class="option-selection">
+                <input id = "passengers" type="number" min="1" step="1" max="5" placeholder="Number of passengers" style="width: 150px;">
+            </div>
+
+            <div class="option-selection">
+                <select name="class" id="#class-select">
+                    <option>Economy</option>
+                    <option>Premium Economy</option>
+                    <option>Business</option>
+                    <option>First</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="main-forms">
+                <div class="left-form">
+                    <form class="airport-selection" id="from-airport">
+                        <input type="text" id = "airport_search" class="search" placeholder="Enter airport">
+                        <div class="airport-records"></div>
+                    </form>
+                </div>
+
+                <div class="right-form">
+                    <form class="airport-selection" id="from-airport">
+                        <input type="text" id = "airport_search" class="search" placeholder="Enter airport">
+                        <div class="airport-records"></div>
+                    </form>
+                </div>
+            </div><br><br><br>
+
+            <div class="search-btn">
+                <center>
+                    <a href="#">Search</a>
+                </center>
+            </div>
+        </div>
+    </article>
 </body>
-</html>
+</html> 
